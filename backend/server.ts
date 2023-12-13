@@ -22,9 +22,9 @@ app.get('/gallery', (req:Request, res:Response) => {
     res.status(200).send({gallery})
 })
 
-app.patch('/image/:id', (req:Request, res:Response) => {
+app.post('/image/:id', (req:Request, res:Response) => {
     let imageToUpdate = gallery.find( img => img.id === req.params.id)
-    if (imageToUpdate != undefined) {
+    if (imageToUpdate !== undefined) {
         let imageIndex = gallery.indexOf(imageToUpdate)
         Object.assign(imageToUpdate, req.body)
         gallery[imageIndex] = imageToUpdate
@@ -36,9 +36,9 @@ app.patch('/image/:id', (req:Request, res:Response) => {
             }
         })
     } else {
-        res.status(200).send({
+        res.status(404).send({
             status: "notFound",
-            data: null
+            message: "Invalid image Id"
         })
     }
 })
