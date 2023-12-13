@@ -1,14 +1,16 @@
 import { FunctionComponent } from "react"
-// import "./PostsList.css"
+import "./ImageGallery.css"
 
 type imageGalleryProps = {
-    gallery: imageObj[],
-    isLoading: boolean
+    gallery: imageObj[];
+    isLoading: boolean;
+    handleUpdateThumbsUp: Function;
+    handleUpdateThumbsDown: Function;
 }
 
-const ImageGallery:FunctionComponent<imageGalleryProps> = ({gallery, isLoading}:imageGalleryProps) => {
+const ImageGallery:FunctionComponent<imageGalleryProps> = ({gallery, isLoading, handleUpdateThumbsUp, handleUpdateThumbsDown}:imageGalleryProps) => {
     return (
-        <ul className="listContainer">
+        <ul className="galleryContainer">
             {!isLoading && gallery.length > 0 && ( 
                 gallery.map((image,index) => (
                     <li key={index} className="imageContainer">
@@ -18,10 +20,10 @@ const ImageGallery:FunctionComponent<imageGalleryProps> = ({gallery, isLoading}:
                         </div>
                         <div className="thumbBtns">
                             <div className="imageThmbUp">
-                                <button><img src="/like.png" alt=""/><div>{image.thumbsUp}</div></button>
+                                <button onClick={()=>handleUpdateThumbsUp(image)}><img src="/like.png" alt=""/><div>{image.thumbsUp}</div></button>
                             </div>
                             <div className="imageThmbDown">
-                                <button><img src="/dislike.png" alt=""/><div>{image.thumbsDown}</div></button>
+                                <button onClick={()=>handleUpdateThumbsDown(image)}><img src="/dislike.png" alt=""/><div>{image.thumbsDown}</div></button>
                             </div>
                             </div>
                     </li>

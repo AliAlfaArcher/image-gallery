@@ -1,0 +1,11 @@
+.imageThmbUp {
+    float:left;
+}
+
+.imageTitle {
+    font-size: large;
+}
+
+.galleryContainer {
+    list-style-type: none;
+}
