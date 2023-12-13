@@ -1,0 +1,74 @@
+{ 
+    "images": [
+        {
+            "id": "img0001",
+            "title": "Squirrel on tree",
+            "imageUrl": "image0001.jpg",
+            "thumbsUp": 3,
+            "thumbsDown": 1
+        },
+        {
+            "id": "img0002",
+            "title": "Foggy mountains",
+            "imageUrl": "image0002.jpg",
+            "thumbsUp": 2,
+            "thumbsDown": 5
+        },
+        {
+            "id": "img0003",
+            "title": "River through valley",
+            "imageUrl": "image0003.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0004",
+            "title": "Cup of coffee",
+            "imageUrl": "image0004.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0005",
+            "title": "Ready to paint",
+            "imageUrl": "image0005.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0006",
+            "title": "Outdoor table",
+            "imageUrl": "image0006.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0007",
+            "title": "City Landscape",
+            "imageUrl": "image0007.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0008",
+            "title": "Paddleboard",
+            "imageUrl": "image0008.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0009",
+            "title": "Tall grass and flowers",
+            "imageUrl": "image0009.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        },
+        {
+            "id": "img0010",
+            "title": "Milky way",
+            "imageUrl": "image0010.jpg",
+            "thumbsUp": 10,
+            "thumbsDown": 4
+        }
+    ]
+}
